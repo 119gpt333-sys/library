@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { BOOKS, searchBooks } from "../data/books";
-import { BookCard } from "../components/BookCard";
 import { addRecommendation, getProfile } from "../store";
 import { ChevronLeft, Search } from "lucide-react";
 
