@@ -1,6 +1,2 @@
-import { createTRPCReact } from "@trpc/react-query";
-
-// AppRouter 타입 정의 (실제로는 백엔드에서 제공)
-type AppRouterType = any;
-
-export const trpc = createTRPCReact<AppRouterType>();
+// tRPC 클라이언트 제거 - fetch API 사용
+// 이 파일은 더 이상 사용되지 않습니다.

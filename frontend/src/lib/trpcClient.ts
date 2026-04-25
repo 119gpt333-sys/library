@@ -1,21 +1,3 @@
-import { httpBatchLink } from "@trpc/client";
-import { QueryClient } from "@tanstack/react-query";
-import { trpc } from "./trpc";
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 1000 * 60 * 5, // 5분
-    },
-  },
-});
-
-const trpcClient = trpc.createClient({
-  links: [
-    httpBatchLink({
-      url: "http://localhost:3000/api/trpc",
-    }),
-  ],
-});
-
-export { trpcClient, queryClient };
+// tRPC 클라이언트 제거 - fetch API 사용
+// 이 파일은 더 이상 사용되지 않습니다.
+export const queryClient = null;
